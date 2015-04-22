@@ -35,6 +35,10 @@ gem 'masonry-rails', '~> 0.2.4'
 #
 gem 'acts_as_votable', '~> 0.10.0'
 #
+gem 'devise-i18n-bootstrap', '~> 0.3.1'
+#
+gem 'devise-i18n-views', '~> 0.3.4'
+#
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring

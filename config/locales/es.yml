@@ -19,9 +19,9 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+es:
  layouts:
   application:
-   title: "Pins"
-   newPin: "New Pin"
-   editPin: "Edit Pin"
+   title: "Pines"
+   newPin: "Nuevo Pin"
+   editPin: "Editar Pin"

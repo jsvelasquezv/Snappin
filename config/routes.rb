@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
 
-  devise_for :users
-  resources :pins do
-    member do
-      put "like", to: "pins#upvote"
+  
+  scope "(:locale)", locale: /es|en/ do
+    devise_for :users
+      resources :pins do
+        member do
+          put "like", to: "pins#upvote"
+      end
     end
-  end
   root "pins#index"
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

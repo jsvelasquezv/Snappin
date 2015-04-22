@@ -1,0 +1,60 @@
+# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+
+es:
+  devise:
+    confirmations:
+      confirmed: "Tu correo ha sido confirmado."
+      send_instructions: "Recibirás un email con instrucciones para confirmar tu correo en pocos minutos."
+      send_paranoid_instructions: "Si tu correo existe en nuestra base de datos, recibirás un mensaje con instrucciones para confirmar tu correo en pocos minutos."
+    failure:
+      already_authenticated: "Ya has iniciado sesión."
+      inactive: "Tu cuenta no está activada todavía."
+      invalid: "Contraseña o %{authentication_keys} invalidos."
+      locked: "Tu cuenta esta bloqueada."
+      last_attempt: "Tienes un intento mas antes que tu cuenta sea bloqueada."
+      not_found_in_database: "Contraseña o %{authentication_keys} invalidos."
+      timeout: "Tu sesión ha expirado. Por favor ingresa de nuevo para continuar."
+      unauthenticated: "Debes ingresar o registrarte andes de continuar."
+      unconfirmed: "Debes confirmar tu correo antes de continuar."
+    mailer:
+      confirmation_instructions:
+        subject: "Instrucciones de confirmación"
+      reset_password_instructions:
+        subject: "Instrucciones para recupear contraseña"
+      unlock_instructions:
+        subject: "Instrucciones para desbloquear tu cuenta"
+    omniauth_callbacks:
+      failure: "No pudo ser autenticado desde la %{kind} porque \"%{reason}\"."
+      success: "Correctamente autenticado desde la %{kind} cuenta."
+    passwords:
+      no_token: "No se puede acceder a esta página sin proceder de un correo electrónico de restablecimiento de contraseña. Si viene de un correo electrónico de restablecimiento de contraseña, por favor asegúrese de que utilizó la URL completa proporcionada."
+      send_instructions: "Usted recibirá un correo electrónico con instrucciones sobre cómo restablecer la contraseña en pocos minutos."
+      send_paranoid_instructions: "Si tu correo exite en nuestra base de datos, recibirás un link para recuperar tu contraseña en pocos minutos."
+      updated: "Tu contraseña ha sido cambiada correctamente. Ahora has iniciado sesión."
+      updated_not_active: "Tu contraseña ha sido cambiada correctamente."
+    registrations:
+      destroyed: "Adios! Tu cuenta se ha cancelado correctamente. Esperamos verte pronto."
+      signed_up: "Bienvenido! Has iniciado sesión correctamente."
+      signed_up_but_inactive: "Te has registrado correctamente. Sin embargo, no hemos podido iniciar sesión porque tu cuenta aún no está activada."
+      signed_up_but_locked: "Te has registrado correctamente. Sin embargo, no hemos podido inicar sesión porque tu cuenta esta bloqueada."
+      signed_up_but_unconfirmed: "Un mensaje con un link de confirmacion ha sido enviado a tu correo. Por favor sigue el link para activar tu cuenta."
+      update_needs_confirmation: "Tu cuenta ha sido actualizada correctamente, pero necesitamos verificar tu correo. Por favor revisa tu correo y sigue el link para confirmar tu nuevo correo."
+      updated: "Tu cuenta ha sido actualizada correctamente."
+    sessions:
+      signed_in: "Has iniciado sesión correctamente."
+      signed_out: "Has cerrado sesión correctamente."
+      already_signed_out: "Has cerrado sesión correctamente."
+    unlocks:
+      send_instructions: "Recibirás un correo con instrucciones para desbloquear tu cuenta en pocos minutos."
+      send_paranoid_instructions: "Si tu cuenta existe, recibirás un correo con instructions para desbloquear tu cuenta en pocos minutos."
+      unlocked: "Tu cuenta ha sido desbloqueada correctamente. Por favor inicia sesión para continuar."
+  errors:
+    messages:
+      already_confirmed: "ya ha sido confirmado, por favor intenta iniciar sesión"
+      confirmation_period_expired: "necesita ser confirmado dentro de %{period}, por favor solicita uno nuevo"
+      expired: "ha expirado, por favor solicita uno nuevo"
+      not_found: "no encontrado"
+      not_locked: "no esta bloqueada"
+      not_saved:
+        one: "1 error evito guardar este %{resource}:"
+        other: "%{count} errores evitaron guardar este %{resource}:"
