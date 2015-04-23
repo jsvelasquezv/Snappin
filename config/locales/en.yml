@@ -25,3 +25,11 @@ en:
    title: "Pins"
    newPin: "New Pin"
    editPin: "Edit Pin"
+   signIn: "Sign In"
+   signUp: "Sign Up"
+   signOut: "Sign Out"
+   account: "Account"
+   language: "Language"
+ pins:
+  index:
+   uploadedBy: "Uploaded By:"
