@@ -29,7 +29,20 @@ es:
    signUp: "Registrate"
    signOut: "Salir"
    account: "Cuenta"
-   language: "Idioma"
+   language: "ES"
  pins:
   index:
    uploadedBy: "Subido por:"
+ activerecord:
+  errors:
+   models:
+    user:
+      attributes:
+       email:
+        blank: "obligatorio"
+       password:
+        blank: "obligatoria"
+        too_short: "muy corta"
+       password_confirmation:
+        confirmation: "no concuerda"
+

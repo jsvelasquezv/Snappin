@@ -6,6 +6,13 @@
 			</div>
 			<div class="panel-body">
 				<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+            <% flash.each do |key, value| %>
+              <div class="alert alert-danger alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+                <%= value %>
+              </div>
+            <% end %>
   					<div class="form-group"><%= f.label :email %>
   						<%= f.email_field :email, autofocus: true, class: "form-control" %>
   					</div>

@@ -29,7 +29,7 @@ en:
    signUp: "Sign Up"
    signOut: "Sign Out"
    account: "Account"
-   language: "Language"
+   language: "EN"
  pins:
   index:
    uploadedBy: "Uploaded By:"
