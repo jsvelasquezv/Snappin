@@ -2,6 +2,8 @@ class PinsController < ApplicationController
 	before_action :find_pin, only: [:show, :edit, :update, :destroy, :upvote]
 	before_action :authenticate_user!, except: [:index, :show]
 
+	add_breadcrumb I18n.t("layouts.application.title"), :root_path
+
 	def index
 		#@pins = Pin.all.order("created_at DESC")
 		if params[:search]
@@ -13,6 +15,7 @@ class PinsController < ApplicationController
 
 	def new
 		@pin = current_user.pins.build
+		add_breadcrumb I18n.t("layouts.application.newPin")
 	end
 
 	def create
@@ -26,7 +29,6 @@ class PinsController < ApplicationController
 	end
 
 	def edit
-		
 	end
 
 	def update

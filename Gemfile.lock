@@ -36,6 +36,7 @@ GEM
     bootstrap-sass (3.3.3)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
+    breadcrumbs_on_rails (2.3.0)
     builder (3.2.2)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -153,6 +154,7 @@ PLATFORMS
 DEPENDENCIES
   acts_as_votable (~> 0.10.0)
   bootstrap-sass (~> 3.3.3)
+  breadcrumbs_on_rails (~> 2.3.0)
   coffee-rails (~> 4.0.0)
   devise (~> 3.4.1)
   devise-i18n-bootstrap (~> 0.3.1)

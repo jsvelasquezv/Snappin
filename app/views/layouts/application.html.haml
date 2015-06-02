@@ -39,4 +39,8 @@
 					%button.close{"aria-label" => "Close", "data-dismiss" => "alert", :type => "button"}
 						%span{"aria-hidden" => "true"} &times; 
 					=msg
+		-if request.env['PATH_INFO'] != '/es' and request.env['PATH_INFO'] != '/en'
+			.row
+				%ol.breadcrumb
+					=render_breadcrumbs :tag => :li, :separator => ""
 		=yield
