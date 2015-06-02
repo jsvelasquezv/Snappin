@@ -3,7 +3,12 @@ class PinsController < ApplicationController
 	before_action :authenticate_user!, except: [:index, :show]
 
 	def index
-		@pins = Pin.all.order("created_at DESC")
+		#@pins = Pin.all.order("created_at DESC")
+		if params[:search]
+			@pins = Pin.search(params[:search]).order("created_at DESC")
+		else
+			@pins = Pin.all.order("created_at DESC")
+		end
 	end
 
 	def new

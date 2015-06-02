@@ -10,6 +10,7 @@
 		.container
 			.navbar-brand= link_to I18n.t('layouts.application.title'), root_path
 			%ul.nav.navbar-nav.navbar-right
+
 				%li.dropdown
 					%a.dropdown-toggle{:href => "#", "role" => "button", "data-toggle" => "dropdown", "data-target" => "#"}
 						= I18n.t('layouts.application.language')
@@ -26,10 +27,16 @@
 				%ul.nav.navbar-nav.navbar-right
 					%li= link_to I18n.t('layouts.application.signUp'), new_user_registration_path
 					%li= link_to I18n.t('layouts.application.signIn'), new_user_session_path
+			
+			= form_tag pins_path, :method => 'get', class: 'navbar-form navbar-center' do
+				.form-group.has-error
+					= text_field_tag :search, nil, class: 'form-control'
+					= submit_tag 'Buscar', :name => nil, class: 'btn btn-default'
 	.container
-		-flash.each do |name, msg|
-			=content_tag :div, msg, class: "alert alert-info alert-dismissible"
 		-flash.each do |type, msg|
-			-if type == notice 
-				=content_tag :div, msg, class: "alert alert-info alert-dismissible"
+			-if type == 'alert' 
+				.alert.alert-danger.alert-dismissible{:role => "alert"}
+					%button.close{"aria-label" => "Close", "data-dismiss" => "alert", :type => "button"}
+						%span{"aria-hidden" => "true"} &times; 
+					=msg
 		=yield
